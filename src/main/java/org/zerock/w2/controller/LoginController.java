@@ -2,6 +2,8 @@ package org.zerock.w2.controller;
 
 import lombok.extern.java.Log;
 import lombok.extern.log4j.Log4j2;
+import org.zerock.w2.dto.MemberDTO;
+import org.zerock.w2.service.MemberService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -29,12 +31,16 @@ public class LoginController extends HttpServlet {
         String mid = req.getParameter("mid");
         String mpw = req.getParameter("mpw");
 
-        String str = mid+mpw;
 
-        HttpSession session = req.getSession();
+        try {
+            MemberDTO memberDTO = MemberService.INSTANCE.login(mid,mpw);
+            HttpSession session = req.getSession();
+            session.setAttribute("loginInfo", memberDTO);
+            resp.sendRedirect("/todo/list");
+        } catch (Exception e) {
+            resp.sendRedirect("/login?result=error");
+        }
 
-        session.setAttribute("loginInfo", str);
 
-        resp.sendRedirect("/todo/list");
     }
 }

@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f12fba8-c010-4d1c-92bd-cca02bad1d54" name="Changes" comment="220831 1049">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0f9bee12-0608-42f1-bbd2-3ae39839c8e6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0f9bee12-0608-42f1-bbd2-3ae39839c8e6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/dto/MemberDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w2/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w2/controller/TodoReadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/controller/TodoReadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w2/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/todo/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/todo/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/todo/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/todo/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +173,7 @@
       <workItem from="1661951240094" duration="180000" />
       <workItem from="1661951470041" duration="510000" />
       <workItem from="1661952059607" duration="6553000" />
-      <workItem from="1662037821079" duration="63000" />
+      <workItem from="1662037821079" duration="1566000" />
     </task>
     <task id="LOCAL-00001" summary="220831 1049">
       <created>1661953787555</created>
@@ -192,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661960808555</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="220831 1049">
+      <created>1662037899575</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662037899575</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
