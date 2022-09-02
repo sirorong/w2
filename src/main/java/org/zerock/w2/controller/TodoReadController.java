@@ -38,9 +38,20 @@ public class TodoReadController extends HttpServlet {
                 exist = true;
             }
 
+            log.info("exist: " + exist);
+
+            if(!exist){
+                todoListStr += tno+"-";
+                viewTodoCookie.setValue(todoListStr);
+                viewTodoCookie.setMaxAge(60*60*24);
+                viewTodoCookie.setPath("/");
+                resp.addCookie(viewTodoCookie);
+            }
+
 
             req.getRequestDispatcher("/WEB-INF/todo/read.jsp").forward(req,resp);
         } catch (Exception e) {
+            e.printStackTrace();
             log.error(e.getMessage());
             throw new ServletException("read error");
         }
